@@ -1,0 +1,18 @@
+package die;
+
+import java.util.Scanner;
+
+public class RollDie 
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner (System.in);
+		int sides;
+		
+		System.out.println ("Please input a value for the ammount of sides on your die");
+		sides = keyboard.nextInt();
+		Die myDie = new Die(sides);
+		
+		System.out.println(myDie.roll(sides));
+	}
+}
